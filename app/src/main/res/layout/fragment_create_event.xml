@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.app.radius.radius.CreateEvent"
+    android:windowSoftInputMode="adjustNothing">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EventName"
+        android:hint="Event Name"
+        android:layout_gravity="center_horizontal|top" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:hint="Address"
+        android:ems="10"
+        android:id="@+id/Address"
+        android:layout_marginTop="6mm"
+        android:layout_gravity="center_horizontal|top" />
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/Date"
+        android:hint="Date"
+        android:layout_marginTop="12mm"
+        android:layout_gravity="left|top" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/EventDescription"
+        android:hint="Short Description of the Event"
+        android:layout_marginBottom="7mm"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Event"
+        android:id="@+id/submit"
+        android:layout_marginBottom="2mm"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <EditText
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/Time"
+        android:hint="Start Time"
+        android:layout_marginBottom="19mm"
+        android:layout_gravity="left|center_vertical" />
+
+    <EditText
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:hint="End Time"
+        android:id="@+id/TimeEnd"
+        android:layout_marginBottom="19mm"
+        android:layout_gravity="right|center_vertical" />
+
+</FrameLayout>
